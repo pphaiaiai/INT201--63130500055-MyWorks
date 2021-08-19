@@ -39,18 +39,34 @@ let myArr = [1, 2, 3];
 console.log(`myArr Length: ${myArr.length}`);
 console.log(`type of myArr is ${typeof myArr}`);
 
-let myObj = [
-  {
-    id: 1,
-    task: 'grading exam'
-  },
-  {
-    id: 2,
-    task: 'class lecture',
-    date: new Date()
-  }
-];
+let myObj = {
+  id: 1,
+  task: 'grading exam'
+};
 
+// {
+//   id: 2,
+//   task: 'class lecture',
+//   date: new Date()
+// }
+let myObj2 = {
+  id: 1,
+  task: 'grading exam'
+};
 console.log(`${JSON.stringify(myObj)}`);
 //The JSON.stringify() method converts a JavaScript object or value to a JSON string
 console.log(`type of myObj is ${typeof myObj}`);
+
+newObj = myObj;
+console.log(`${JSON.stringify(newObj)}`);
+console.log(`type of newObj is ${typeof newObj}`);
+
+console.log(`newObj === myObj is ${newObj === myObj}`);
+console.log(`myObj1 === myObj2 is ${myObj === myObj2}`);
+
+let a = [];
+let b = a;
+b[0] = 1;
+let c = [1];
+console.log(`a === b is ${a === b}`);
+console.log(`b == c is ${b == c}`);
